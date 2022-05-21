@@ -1,0 +1,19 @@
+<div class="container" *ngIf="product">
+
+  <div class="details">
+    <img src="{{product.image}}" alt="prod img" width="400px">
+    <div class="text">
+      <h2>
+        {{product.name}}
+      </h2>
+
+      <p><strong>Include:</strong><br>
+        <em>{{ product.description }}</em></p>
+      <div class="order">
+        <h4>{{ product.price | currency }}</h4>
+        <button (click)="addToCart(product)">Add to cart</button>
+      </div>
+
+    </div>
+  </div>
+</div>

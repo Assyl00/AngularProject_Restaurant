@@ -1,0 +1,19 @@
+<!-- <p>menu works!</p> -->
+
+<div class = "container" *ngIf="category">
+<!--  <h2>{{category.name}}</h2>-->
+  <div class = "all-food"  *ngFor="let product of menu">
+      <div class="menu">
+        <a [title] = "product.name" [routerLink]="['/products', product.id]">
+          <img src="{{product.image}}" alt="image of food" width="250px">
+        </a>
+        <div class="text">
+          <p>{{product.name}}</p>
+          <h4>{{product.price | currency}}</h4>
+          <a [title] = "product.name" [routerLink]="['/products', product.id]">
+            <button>DETAILS</button>
+          </a>
+        </div>
+    </div>
+  </div>
+</div>

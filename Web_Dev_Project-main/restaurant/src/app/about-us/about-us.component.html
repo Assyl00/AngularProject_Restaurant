@@ -1,0 +1,49 @@
+<div class="all">
+  <div class="about">
+    <br>
+  <hr>
+    <h3  align="center" class="section-title text-center"><span style="font-family: Monotype Corsiva; font-size: 40px;">About Us</span></h3>
+  <hr>
+</div>
+
+
+<!-- <div class="content">
+  <div class="img">
+    <img src="/assets/4.png" alt="img" width="80%" height="700px" class="img">
+  </div>
+  
+  <div class="value">
+    <p class="text">Welcome to Paradise<br>Super restaurant</p>
+  </div>
+  
+  
+</div> -->
+
+
+<div class="mall-slide">
+    <div class="slid-content">
+        <div class="mall-show-slide fade" *ngFor="let item of images;">
+            <img src="{{item}}" style="width:100%">
+        </div>
+        <div class="mall-carousel-ind">
+            <ul>
+                <li *ngFor="let item of images; let i = index;" [class.mall-this]="startIndex - 1 === i"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<p>
+  Welcome to Paradise, our home located in New York’s Flatiron District, where we invite guests to celebrate life and share sundry blends of modern and traditional Lebanese cuisine. Our goal at ilili is to unify our guest’s cultures and spirits with our own, expressing passion and generosity in the cuisine we share. Executive Chef and Owner Philippe Massoud excellently crafts a melting pot of Lebanese, Levantine, Mediterranean inspired cuisine mixed with New York attitude. Flavorful herbs and spices combine textures to appease broad-based palates.
+
+  Our attentive staff ensures that your entire dining experience at ilili is stellar from beginning to end. Each passing of our shared plates and the breaking of fresh Levantine pita opens up a new conversation.
+
+  Whether part of a party of fifty or a party of two, your experience throughout our elegant, yet comfortable space is eventful. We are sharing our long held Lebanese-Mediterranean traditions with a modern contemporary twist. You will feel both close to home and apart of something new.
+</p><br><br><br><br>
+</div>
+
+
+
+
+
+

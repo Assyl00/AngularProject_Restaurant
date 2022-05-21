@@ -1,0 +1,15 @@
+.container{
+  font-family: sans-serif;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+button{
+  border: none;
+  background-color: transparent;
+  color: coral;
+  font-size: 20px;
+}
+
+button:hover{
+  color: #e04505;
+}

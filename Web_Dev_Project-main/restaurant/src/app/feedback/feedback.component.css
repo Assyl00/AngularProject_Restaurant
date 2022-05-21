@@ -1,0 +1,30 @@
+.content{
+	border: 4px inset red;
+	background-color: rgb(255, 160, 122);
+}
+
+.form-group{
+	margin-left: 30px;
+	margin-bottom: 30px;
+}
+.form-group:first-child{
+	margin-top: 30px;
+	/*margin-bottom: 30px;*/
+}
+h1{
+	background-color: rgb(220, 20, 60);
+	color: white;
+}
+
+h2{
+	background-color: rgb(220, 20, 60);
+	color: white;
+}
+
+ul{
+	border: 4px inset red;
+	background-color: rgb(255, 160, 122);
+}
+ul li{
+	list-style-type: none;
+}

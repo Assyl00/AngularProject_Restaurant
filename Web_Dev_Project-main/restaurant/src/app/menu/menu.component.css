@@ -1,0 +1,47 @@
+/*p{
+	width: 100%;
+	min-height: 150px;
+	flex-grow: 1;
+	/*padding: 20px;*/
+/*}*/
+
+.container{
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: sans-serif;
+  display: flex;
+}
+.menu {
+  /*display: flex;*/
+  /*margin-bottom: 10px;*/
+  margin: 40px 50px 40px 50px;
+}
+.text{
+  font-size: 17px;
+}
+button{
+  width: 120px;
+  height: 35px;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: coral;
+  color: aliceblue;
+}
+Button:hover{
+  background-color: #fde2db;
+  color: #ff9671;
+}
+h4{
+  font-size: 20px;
+}
+img:hover{
+  animation: mover 2s infinite alternate;
+}
+
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+
+

@@ -1,0 +1,46 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	color: white;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+.content{
+	/*position: fixed;*/
+	background-color: rgb(146,47,52);
+	display: flex;
+	justify-content: space-between;
+	font-family: montserrat;
+
+}
+
+.Menu{
+	display: flex;
+	align-items: center;
+	color: white;
+}
+
+.Menu nav ul{
+	display: flex;
+	list-style-type: none;
+}
+.Menu nav ul li{
+	display: flex;
+	margin-right: 20px;
+	border: 2px solid white;
+}
+.Menu nav ul li:hover{
+	transform: scale(1.2);
+	background-color: rgb(220, 20, 60);
+	cursor: pointer;
+	/*margin-: */
+}
+
+#icon{
+	margin-right: 10px;
+	background-color: #fff;
+}

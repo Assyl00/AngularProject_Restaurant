@@ -1,0 +1,76 @@
+<h1>Feedbacks</h1>
+<div class="content"> 
+	<div class="form-group">
+		<label>Surname</label><br>
+		<input class="form-control" name="name" [(ngModel)]="feedback.surname" /><br>
+	</div>
+	<div class="form-group">
+		<label>Name</label><br>
+		<input class="form-control" name="name" [(ngModel)]="feedback.name" /><br>
+	</div>
+	<div class="form-group">
+		<label>Email</label><br>
+		<input class="form-control" name="email" [(ngModel)]="feedback.email" />
+		<select class="form-control" name="logoemail" [(ngModel)]="feedback.logoemail">
+			<option  *ngFor="let logo of logoemails" [value]="logo">
+				{{logo}}
+			</option>
+		</select><br>
+	</div>
+
+	<div class="form-group">
+		<label>Star</label><br>
+		<input type="number" class="form-control" name="star" [(ngModel)]="feedback.star" /><br>
+	</div>
+
+	<div class="form-group">
+		<label>Service level</label><br>
+		<select class="form-control" name="servicelevel" [(ngModel)]="feedback.servicelevel">
+			<option  *ngFor="let serv of servicelevels" [value]="serv">
+				{{serv}}
+			</option>
+		</select><br>
+	</div>
+
+	<!-- <div class="form-group">
+		<label>Производитель</label>
+		<select class="form-control" name="company" [(ngModel)]="feedback.company">
+			<option  *ngFor="let comp of companies" [value]="comp">
+				{{comp}}
+			</option>
+		</select>
+	</div> -->
+	<div class="form-group">
+		<br>
+		<button class="btn btn-default" (click)="addPhone()">Add</button>
+		<br>
+	</div>
+	</div>
+	<div><h2>Added feedbacks</h2>
+	<ul *ngFor="let f of feedbacks" >
+		<li>{{f.surname}} {{f.name}} {{f.email}}{{f.logoemail}} ({{f.servicelevel}}) - {{f.star}}</li>
+	</ul>
+</div>
+
+
+
+
+<!-- <h2>Order</h2>
+
+<table>
+	<thead>
+		<th>Product</th>
+		<th>Price</th>
+		<th>Action Delete</th>
+	</thead>
+	<tbody>
+		<tr *ngFor="let product of menu">
+			<td>{{product.name}}</td>
+			<td>{{product.price</td>
+			<td>Delete</td>
+		</tr>
+	</tbody>
+</table>
+
+
+<div class="header__cart"><button class="smart-basket__min"><span class="smart-basket__min-text">Корзина: </span> <img class="smart-basket__min-icon" src="images/cart.png" width="18" alt="Корзина"><span class="smart-basket__min-count">0</span></button></div> -->
